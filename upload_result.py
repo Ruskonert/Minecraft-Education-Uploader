@@ -25,6 +25,10 @@ def execute_git(nickname, group):
     if not os.path.exists(".." + JAVA_SOURCE_FILE):
         print "Error! {} doesn't exist. Please check file is exist.".format(JAVA_SOURCE_FILE)
         return
+    if not os.path.exists(group):
+        os.mkdir(group)
+    if not os.path.exists(group + '/' + nickname):
+        os.mkdir(group + '/' + nickname)
     dst = "{}/{}/{}".format(group, nickname, "MinecraftEducation.java")
     copyfile(".." + JAVA_SOURCE_FILE, dst)
 
