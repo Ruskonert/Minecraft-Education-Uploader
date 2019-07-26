@@ -1,2 +1,2 @@
-# Minecraft-Education-Result
-The project created by your student will be uploaded to the appropriate repository
+# Minecraft-Education-Uploader
+The source code can automatically upload the git source code to the git repository by typing the git commands automatically.
